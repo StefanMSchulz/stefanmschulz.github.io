@@ -1,0 +1,369 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #e0e0e0;
+    background: #121212;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(90deg, #333, #555);
+    color: #e0e0e0;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+nav {
+    background: #222;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0.8rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #6be6db;
+}
+
+section {
+    position: relative;
+    max-width: 70%;
+    margin: 2rem auto;
+    background: #1e1e1e;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    transition: transform 0.2s ease;
+    padding-top: 3.6rem;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+section h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #6be6db;
+    border-bottom: 2px solid #6be6db;
+    display: inline-block;
+    padding-bottom: 0.2rem;
+}
+
+section p {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    color: #cfcfcf;
+}
+
+section ul {
+    margin: 1rem 1.5rem;
+    font-size: 1.1rem;
+    color: #cfcfcf;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.profile-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #555;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.buttons {
+    bottom: 1rem;
+}
+
+.buttons a {
+    display: inline-block;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background: #6be6db;
+    color: #121212;
+    text-decoration: none;
+    border-radius: 30px 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 120px;
+    text-align: center;
+}
+
+.buttons a:hover {
+    background: #6be6db;
+    transform: translateY(-2px);
+    margin-right: 1rem;
+    background-color: transparent;
+    box-shadow: 0 0 25px #12f3e0;
+    color: #6be6db;
+}
+
+.buttons a i {
+    transform: scale(2.5);
+    transition: transform 0.2s ease, opacity 0.3s ease;
+}
+
+section h3 {
+    font-size: 1.6rem;
+}
+
+.publication-p {
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+}
+
+.publication {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.publication b {
+    color: #6be6db;
+}
+
+.publication-image img {
+    height: 220px;
+    width: 300px;
+    background-color: white;
+}
+
+.publication-data {
+    flex: 1;
+}
+
+.publication-data h1 {
+    margin-top: 0rem;
+    font-size: 1.4rem;
+}
+
+.publication-data p {
+    margin: 0rem;
+}
+
+.link-buttons {
+    bottom: 1rem;
+    padding-bottom: 2rem;
+}
+
+.link-buttons a {
+    display: inline-block;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background: #6be6db;
+    color: #121212;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.7rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+}
+
+.link-buttons a:hover {
+    background: #6be6db;
+    transform: translateY(-2px);
+    margin-right: 1rem;
+    background-color: transparent;
+    box-shadow: 0 0 25px #12f3e0;
+    color: #6be6db;
+}
+
+.link-buttons a i {
+    transform: scale(2.5);
+    transition: transform 0.2s ease, opacity 0.3s ease;
+}
+
+.project {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.project-image img {
+    height: 220px;
+    width: 300px;
+    background-color: white;
+}
+
+.project-data {
+    flex: 1;
+}
+
+.project-data h3 {
+    margin-top: 0rem;
+    font-size: 1.4rem;
+}
+
+.project-data p {
+    margin: 0rem;
+}
+
+.project-buttons {
+    bottom: 1rem;
+    padding-bottom: 2rem;
+}
+
+.project-buttons a {
+    display: inline-block;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background: #6be6db;
+    color: #121212;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.7rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+}
+
+.project-buttons a:hover {
+    background: #6be6db;
+    transform: translateY(-2px);
+    margin-right: 1rem;
+    background-color: transparent;
+    box-shadow: 0 0 25px #12f3e0;
+    color: #6be6db;
+}
+
+.project-buttons a i {
+    transform: scale(2.5);
+    transition: transform 0.2s ease, opacity 0.3s ease;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #222;
+    color: #e0e0e0;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+        margin: 0 0.5rem;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    section p, section ul {
+        font-size: 1rem;
+    }
+
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-image {
+        margin-bottom: 1rem;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 0.5rem 0;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    section h2 {
+        font-size: 1.6rem;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+}
