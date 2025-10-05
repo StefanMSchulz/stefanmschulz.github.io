@@ -3,151 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academic Portfolio</title>
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
+    <title>Stefan Schulz - PhD Candidate</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#publications">Publications</a>
-        <a href="#projects">Projects</a>
-    </nav>
 
-    <!-- About Me Section -->
-    <section id="about">
-        <div class="about-container">
-            <div class="profile-image"><img src="assets/profile_pic.jpg"></div>
-            <div class="about-text">
-                <h1>Hi, I'm Stefan!</h1>
-                <p>I'm a Ph.D. candidate in Computer Science at the University of Bonn supervised by Prof. Matthias B. Hullin. Within the scope of my thesis 
-                    I am working on Differentiable Scene Representation for 4D/6D Capture, Reconstruction and Synthesis.<br>
-                My interests range from Computer Vision in general to more specific fields like scene representation and reconstruction that can be applied in various use cases 
-                such as for games, entertainment, training firefighters over to helping and assessing situations after natural catastrophes.<br> 
-                Feel free to reach out and contact me in case you are interested in my work or want to collaborate on a project.
-                </p>
-                <div class="buttons">
-                    <a href="certificates/CV" target="_blank">CV</a>
-                    <a href="mailto:StefanM.Schulz@t-online.de" target="_blank" id="icon"><i class='bx bx-envelope'></i></a>
-                    <a href="https://www.linkedin.com/in/stefan-m-schulz" target="_blank" id="icon"><i class="bx bxl-linkedin-square"></i></a>
-                    <a href="https://github.com/StefanMSchulz" target="_blank" id="icon"><i class='bx bxl-github'></i></a>
-                </div>
-            </div>
+    <header>
+        <div class="header-content">
+            <span class="logo">[STEFAN SCHULZ]</span>
+            <nav>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#publications" class="nav-link">Publications</a>
+            </nav>
         </div>
-    </section>
+    </header>
 
-    <!-- Publication Section -->
-    <section id="publications">
-        <h2>Publications</h2>
-        <p class="publication-p">* indicates equal contribution</p>
-        <hr>
-        <h3>2025</h3>
-        <div class="publication">
-            <div class="publication-image"><img src="assets/publications/metamizer.png"></div>
-            <div class="publication-data">
-                <h1>Metamizer: a Versatile Neural Optimizer for Fast and Accurate Physics Simulations</h1>
-                <p>Nils Wandel, <b>Stefan Schulz</b> and Reinhard Klein</p>
-                <p><i>International Conference on Learning Representations (ICLR)</i>, 2025</p>
-                <div class="link-buttons">
-                    <a href="" target="_blank">PDF</a>
-                    <a href="https://github.com/wandeln/Metamizer" target="_blank">Code</a>
-                    <a href="https://wandeln.github.io/Metamizer_webpage/" target="_blank">Page</a>
-                    <a href="" target="_blank">Poster</a>
+    <main>
+        
+        <section id="about" class="hero">
+            
+            <div class="profile-row">
+                
+                <div class="hero-image-container">
+                    <img src="assets/profile_pic.jpg" alt="Stefan Schulz" class="profile-photo"> 
                 </div>
-            </div>            
-        </div>
-        <hr>
-        <h3>2024</h3>
-        <div class="publication">
-            <div class="publication-image"><img src="assets/publications/partialconv.png"></div>
-            <div class="publication-data">
-                <h1>Deep Interpolation of Remote Sensing Land Surface Temperature Data with Partial Convolutions</h1>
-                <p>Florian Huber*, <b>Stefan Schulz</b>* and Volker Steinhage</p>
-                <p><i>MDPI Sensors</i>, 2024</p>
-                <div class="link-buttons">
-                    <a href="" target="_blank">PDF</a>
-                    <a href="https://www.ki-irepro.org/" target="_blank">Page</a>
-                </div>
-            </div>     
-        </div>
-        <hr>
-        <h3>2023</h3>
-        <div class="publication">
-            <div class="publication-image"><img src="assets/publications/robocup.jpg"></div>
-            <div class="publication-data">
-                <h1>RoboCup 2022 AdultSize Winner NimbRo: Upgraded Perception, Capture Steps Gait and Phase-Based In-Walk Kicks</h1>
-                <p>Dmytro Pavlichenko, Grzegorz Ficht, Arash Amini, Mojtaba Hosseini, Raphael Memmesheimer, Angel Villar-Corrales, <b>Stefan M. Schulz</b>, Marcell Missura,
-                     Maren Bennewitz and Sven Behnke</p>
-                <p><i>RoboCup 2022: Robot World Cup XXV, Springer-Verlag</i>, 2023</p>
-                <div class="link-buttons">
-                    <a href="" target="_blank">PDF</a>
-                    <a href="" target="_blank">Page</a>
-                </div>
-            </div>     
-    </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <p>Here are some of the projects I am working on and have worked on:</p>
-        <!--
-        <div class="project">
-            <div class="project-image"><img src=""></div>
-            <div class="project-information">
-                <h3>PDE-Solver</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nisi sunt autem consectetur illo tenetur ad, sequi nihil consequuntur 
-                    totam inventore mollitia incidunt eaque commodi atque eos eius adipisci. Perferendis.</p>
-                <div class="project-buttons">
-                    <a href="" target="_blank">Code</a>
-                </div>
-            </div>
-        -->
-        </div>
-        <div class="project">
-            <div class="project-image"><img src="assets/d4torch.png"></div>
-            <div class="project-information">
-                <h3>D4Torch</h3>
-                <p>
-                    D4torch is a package for equivariant physics based neural networks that work on staggered grids. Standard packages like escnn only work on pixel-grids 
-                    making them unsuitable for fluid simulations. Thus together with a colleague I am developing a pypi package handling these cases.
-                </p>
-                <div class="project-buttons">
-                    <a href="" target="_blank">Code (n/a)</a>
-                </div>
-            </div>
-        </div>
-        <div class="project">
-            <div class="project-image"><img src="assets/webpage.png"></div>
-            <div class="project-information">
-                <h3>Portfolio Website</h3>
-                <p>
-                    My personal homepage is now up and running and will be kept up-to-date. I am happy with how it turned out and that it is not some github template. It is
-                    used for displaying my work and putting myself out there. Feel free to comment on the design or the contents if you like.
-                </p>
-                <div class="project-buttons">
-                    <a href="" target="_blank">Code</a>
-                </div>
-            </div>
-        </div>
-        <!--
-        <div class="project">
-            <div class="project-image"><img src=""></div>
-            <div class="project-information">
-                <h3>Master Thesis</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nisi sunt autem consectetur illo tenetur ad, sequi nihil consequuntur 
-                    totam inventore mollitia incidunt eaque commodi atque eos eius adipisci. Perferendis.</p>
-                <div class="project-buttons">
-                    <a href="" target="_blank">Code</a>
-                </div>
-            </div>
-        </div>
-        -->
-    </section>
+                <div class="hero-text-content">
+                    <h1>
+                        <span class="name-highlight">Stefan Schulz</span>.<br>
+                        PhD Candidate in Computer Graphics & Vision
+                    </h1>
+                    
+                    <a href="/certificates/CV.pdf" target="_blank" class="cv-button-hero">Download CV <i class="fas fa-download"></i></a>
 
-    <!-- Footer -->
+                    <div class="social-links">
+                        <a href="mailto:stefanm.schulz@t-online.de" title="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://github.com/StefanMSchulz" target="_blank" title="GitHub"><i class="fab fa-github"></i></a> 
+                        <a href="https://scholar.google.com/citations?user=WEFLPx4AAAAJ&hl=de" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a> 
+                        <a href="https://www.linkedin.com/in/stefan-m-schulz" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div> 
+            
+            <div class="hero-paragraph-container">
+                <p>I am a first-year PhD candidate at the University of Bonn, supervised by Prof. Matthias Hullin specializing in "Differentiable Scene Representation for 4D/6D Capture, Reconstruction and Synthesis". My work aims to create scalable, high-fidelity real-time algorithms for real-world 3D content acquisition and generation with application in AR/VR as well as search and rescue ops.</p>
+                <p>Outside work, you can find me on hiking trails and pursuing (mostly) landscape photography or reading a sci-fi novel.</p>
+            </div>
+            
+            <div id="research-container" class="research-grid-container">
+                <h2 class="research-title">/ research interests</h2> 
+                <div class="focus-grid">
+                    <div class="focus-item">
+                        <i class="fas fa-cube focus-icon"></i>
+                        <h3>Computer Graphics</h3>
+                        <p>High-fidelity neural rendering, relighting, and physically-based material modeling for realistic synthesis.</p>
+                    </div>
+                    <div class="focus-item">
+                        <i class="fas fa-eye focus-icon"></i>
+                        <h3>Computer Vision</h3>
+                        <p>Real-time 3D reconstruction, geometry estimation, view synthesis, and (generative) scene editing.</p>
+                    </div>
+                    <div class="focus-item">
+                        <i class="fas fa-camera focus-icon"></i>
+                        <h3>Capture Stages</h3>
+                        <p>Multi-view capture, lighting, (generative) video editing, and digital twin/avatar creation.</p>
+                    </div>
+                </div>
+            </div> 
+        </section> 
+        <hr class="separator">
+
+        <section id="publications">
+            <h2>/ featured publications</h2> 
+            
+            <div class="project-item">
+                <div class="project-media-col">
+                    <div class="project-media">
+                        <img src="assets/publications/metamizer.png" alt="Project 2 Image" class="project-image">
+                    </div>
+                </div>
+                <div class="project-description-col">
+                    <div>
+                        <h3>Metamizer: a Versatile Neural Optimizer for Fast and Accurate Physics Simulations</h3>
+                        <span class="metadata" style="font-style: italic;">ICLR, 2025</span>
+                        <span class="metadata"><span style="color:#ffffff"> Nils Wandel,</span> Stefan Schulz<span style="color:#ffffff">, Reinhard Klein</span></span>
+                        <p>sdsdf</p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://arxiv.org/pdf/2410.19746" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+                        <a href="https://github.com/wandeln/Metamizer" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        <a href="https://wandeln.github.io/Metamizer_webpage/" target="_blank"><i class="fas fa-desktop"></i> Project Page</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-media-col">
+                    <img src="assets/publications/partialconv.png" alt="Project 2 Image" class="project-image">
+                </div>
+                <div class="project-description-col">
+                    <div>
+                        <h3>Deep Interpolation of Remote Sensing Land Surface Temperature Data with Partial Convolutions</h3>
+                        <span class="metadata" style="font-style: italic;">MDPI Sensors, 2024</span>
+                        <span class="metadata"><span style="color:#ffffff">Florian Huber*,</span> Stefan Schulz<span style="color:#ffffff">*, Volker Steinhage (* denotes equal contribution)</span></span>
+                        <p></p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://www.mdpi.com/1424-8220/24/5/1604" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-media-col">
+                    <img src="assets/publications/robocup.jpg" alt="Project 2 Image" class="project-image">
+                </div>
+                <div class="project-description-col">
+                    <div>
+                        <h3>RoboCup 2022 AdultSize Winner NimbRo: Upgraded Perception, Capture Steps Gait and Phase-Based In-Walk Kicks</h3>
+                        <span class="metadata" style="font-style: italic;">RoboCup 2022: Robot World Cup XXV, Springer Verlag, 2023</span>
+                        <span class="metadata"><span style="color:#ffffff">Dmytro Pavlichenko, Grzegorz Ficht, Arash Amini, Mojtaba Hosseini, Raphael Memmesheimer, Angel Villar-Corrales, </span>Stefan M. Schulz<span style="color:#ffffff">, Marcell Missura, Maren Bennewitz and Sven Behnke</span></span>
+                        <p></p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://arxiv.org/pdf/2302.02956" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+                    </div>
+                </div>
+            </div>
+
+            </section>        
+    </main>
+
     <footer>
-        <p>&copy; Stefan Schulz | 2025</p>
+        &copy; 2025 Stefan Schulz. Built with pure HTML/CSS :).
     </footer>
+
 </body>
 </html>
