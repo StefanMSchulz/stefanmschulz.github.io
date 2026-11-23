@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Stefan Schulz · PhD Candidate, University of Bonn</title>
     <meta name="description" content="Stefan Schulz is a PhD candidate at the University of Bonn working on differentiable scene representations for 4D capture, reconstruction and synthesis in computer graphics and vision.">
     <meta name="author" content="Stefan Schulz">
-    <meta name="theme-color" content="#f7f7f5" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#0e1113" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#0e1113">
 
     <!-- Link previews (Slack, LinkedIn, X, ...) -->
     <meta property="og:type" content="profile">
@@ -24,7 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 
-    <!-- Apply the saved theme before first paint to avoid a flash -->
+    <!-- Dark by default; apply a saved choice before first paint to avoid a flash -->
     <script>
         try {
             var t = localStorage.getItem('theme');
@@ -265,7 +264,7 @@
     </footer>
 
     <script>
-        // Theme toggle: follows the system setting until the visitor picks one.
+        // Theme toggle: dark by default until the visitor picks one.
         (function () {
             var root = document.documentElement;
             var btn = document.querySelector('.theme-toggle');
