@@ -342,7 +342,7 @@ h1 {
     background: var(--border);
 }
 
-.prose { max-width: 42rem; }
+.prose p:last-child { margin-bottom: 0; }
 .prose p { margin: 0 0 1.1em; color: var(--text-muted); }
 .prose .lead {
     font-size: clamp(1.15rem, 1.05rem + .5vw, 1.35rem);
@@ -354,48 +354,52 @@ h1 {
 .prose em { font-style: normal; color: var(--accent); }
 .prose strong { color: var(--text); font-weight: 600; }
 
-/* ---------- Research interests ---------- */
-/* One slim panel split into columns; stacks into rows on narrow screens */
-.interests {
+/* ---------- About: bio + research-interest sidebar ---------- */
+.about-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+    grid-template-columns: minmax(0, 1fr) 16rem;
+    gap: clamp(1.5rem, 4vw, 3rem);
+    align-items: start;
+}
+
+.interests {
+    padding: 1.25rem;
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    overflow: hidden;
 }
 
-.interest {
-    padding: 1.1rem 1.25rem 1.25rem;
-    /* 1px-wide dividers that work for both side-by-side and stacked layouts */
-    box-shadow: -1px 0 0 var(--border), 0 -1px 0 var(--border);
+.interests-label {
+    margin: 0 0 .85rem;
+    font-family: var(--font-mono);
+    font-size: .75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: var(--text-muted);
 }
 
-.interest h3 {
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-    margin: 0 0 .7rem;
-    font-size: 1rem;
-    font-weight: 650;
-    letter-spacing: -.01em;
-}
-.interest h3 .icon { width: 1.05rem; height: 1.05rem; color: var(--accent); }
 .tags {
     display: flex;
     flex-wrap: wrap;
-    gap: .35rem;
+    gap: .45rem;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 .tags li {
-    padding: .2rem .6rem;
-    font-size: .8rem;
+    padding: .3rem .8rem;
+    font-size: .85rem;
+    font-weight: 500;
     line-height: 1.4;
-    color: var(--text-muted);
-    background: var(--surface-2);
+    color: var(--accent);
+    background: var(--accent-soft);
     border-radius: 999px;
+}
+
+/* Tablet and below: sidebar moves under the text */
+@media (max-width: 860px) {
+    .about-grid { grid-template-columns: 1fr; }
 }
 
 /* ---------- Publications ---------- */
